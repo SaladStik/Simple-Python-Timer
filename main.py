@@ -19,7 +19,7 @@ def start_timer():
 
 
 root = tkinter.Tk()
-root.geometry("200x200")  # Set the window size to 200x200
+root.geometry("230x110")  # Set the window size to 200x200
 
 root.title("Timer App")
 
