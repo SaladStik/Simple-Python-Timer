@@ -1,14 +1,7 @@
 import time
 import tkinter
 
-root = tkinter.Tk()
-root.geometry("200x200")  # Set the window size to 200x200
 
-root.title("Timer App")
-
-label = tkinter.Label(root, font=50, text="Waiting for input")
-timeLabel = tkinter.Label(root, font=15, text="Enter the time in seconds: ")
-timeEntered = tkinter.Entry(root)
 
 def start_timer():
     try:
@@ -22,6 +15,17 @@ def start_timer():
         root.bell()
     except ValueError:
         label.config(text="Please enter a valid number")
+
+
+
+root = tkinter.Tk()
+root.geometry("200x200")  # Set the window size to 200x200
+
+root.title("Timer App")
+
+label = tkinter.Label(root, font=50, text="Waiting for input")
+timeLabel = tkinter.Label(root, font=15, text="Enter the time in seconds: ")
+timeEntered = tkinter.Entry(root)
 
 button = tkinter.Button(root, text="start timer", command=start_timer)
 
